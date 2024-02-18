@@ -17,14 +17,14 @@ public class DataInitializer {
         Artist picasso = new Artist("Pablo Picasso", "Spanish", 1881);
 
         // Artwork creation using the new constructor:
-        Artwork guernica = new Artwork(null, "Guernica", 1937, "Painting", picasso);
-        Artwork lesDemoiselles = new Artwork(null, "Les Demoiselles d'Avignon", 1907, "Painting", picasso);
+        Artwork guernica = new Artwork(null, "Guernica", 1937, "Painting", picasso,"guernica.png");
+        Artwork lesDemoiselles = new Artwork(null, "Les Demoiselles d'Avignon", 1907, "Painting", picasso,"les_demoiselles.png");
 
 
         Artist hokusei = new Artist("Katsushika Hokusei", "Japanese", 1760);
 
-        Artwork GreatWave = new Artwork(null, "Great Wave off Kanagawa", 1831, "Painting", hokusei);
-        Artwork FineWind = new Artwork(null, "Fine Wind, Clear Morning", 1937, "Painting", hokusei);
+        Artwork GreatWave = new Artwork(null, "Great Wave off Kanagawa", 1831, "Painting", hokusei,"GreatWaveoffKanagawa.png");
+        Artwork FineWind = new Artwork(null, "Fine Wind, Clear Morning", 1937, "Painting", hokusei, "FineWindClearMorning.png");
 
         picasso.addArtwork(guernica);
         picasso.addArtwork(lesDemoiselles);

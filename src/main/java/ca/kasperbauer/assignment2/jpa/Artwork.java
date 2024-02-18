@@ -18,16 +18,16 @@ public class Artwork {  //  Opening brace for the class
 //    @JoinColumn(name = "id") // Column for foreign key
     private Artist artist;
 
-    public Artwork(Long id, String title, int creationYear, String type, Artist artist) {
+    public Artwork(Long id, String title, int creationYear, String type, Artist artist,String image) {
         this.id = id;
         this.title = title;
         this.creationYear = creationYear;
         this.type = type;
         this.artist = artist;
+        this.image = image;
     }
 
     public Artwork() {
-
     }
 
     // Getters and Setters
@@ -41,5 +41,7 @@ public class Artwork {  //  Opening brace for the class
     public void setType(String type) { this.type = type; }
     public Artist getArtist() { return artist; }
     public void setArtist(Artist artist) { this.artist = artist; }
+    public String getImage() { return image; }
+    public void setImage(String image) { this.image = image; }
 
 }

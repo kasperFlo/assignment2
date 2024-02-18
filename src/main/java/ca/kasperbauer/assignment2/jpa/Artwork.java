@@ -15,7 +15,7 @@ public class Artwork {  //  Opening brace for the class
     private String type;
 
     @ManyToOne
-    @JoinColumn(name = "id") // Column for foreign key
+//    @JoinColumn(name = "id") // Column for foreign key
     private Artist artist;
 
     public Artwork(Long id, String title, int creationYear, String type, Artist artist) {

@@ -25,7 +25,7 @@ public class Artist {
     public Artist() {
     }
 
-    public Artist(String name, String nationality, Integer birthYear, Integer deathYear) {
+    public Artist(String name, String nationality, Integer birthYear) {
         this.name = name;
         this.nationality = nationality;
         this.birthYear = birthYear;
@@ -56,6 +56,7 @@ public class Artist {
     public void setBirthYear(Integer birthYear) {
         this.birthYear = birthYear;
     }
+
     public String getNationality() {
         return nationality;
     }

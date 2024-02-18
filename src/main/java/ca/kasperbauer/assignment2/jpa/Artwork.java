@@ -9,10 +9,10 @@ public class Artwork {  //  Opening brace for the class
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String title;
     private int creationYear;
     private String type;
+    private String image;
 
     @ManyToOne
 //    @JoinColumn(name = "id") // Column for foreign key

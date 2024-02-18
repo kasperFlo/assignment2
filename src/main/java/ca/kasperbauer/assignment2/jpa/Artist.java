@@ -31,8 +31,6 @@ public class Artist {
         this.birthYear = birthYear;
     }
 
-    public Artist(String vincent, String vanGogh, String dutch, int deathYear) {
-    }
 
     // Getters and Setters ...
     public Long getId() {

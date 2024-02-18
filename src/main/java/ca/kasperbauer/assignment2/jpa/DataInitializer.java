@@ -14,7 +14,7 @@ public class DataInitializer {
     @PostConstruct
     public void init(){
 
-        Artist picasso = new Artist("Pablo", "Picasso", "Spanish", 1881);
+        Artist picasso = new Artist("Pablo Picasso", "Spanish", 1881, 1973);
 
         // Artwork creation using the new constructor:
         Artwork guernica = new Artwork(null, "Guernica", 1937, "Painting", picasso);
@@ -23,8 +23,6 @@ public class DataInitializer {
         picasso.addArtwork(guernica);
         picasso.addArtwork(lesDemoiselles);
         artistRepository.save(picasso);
-
-        // ... (Similar pattern for other artists and artworks)
 
         artistRepository.flush();
     }
